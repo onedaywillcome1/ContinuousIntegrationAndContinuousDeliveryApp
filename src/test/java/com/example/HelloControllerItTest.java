@@ -40,7 +40,7 @@ public class HelloControllerItTest {
     public void getHello() throws Exception {
         ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
-        assertThat(response.getBody(), equalTo("Hello Ahmet!"));
+        assertThat(response.getBody(), equalTo("Hello!"));
     }
 
 }
