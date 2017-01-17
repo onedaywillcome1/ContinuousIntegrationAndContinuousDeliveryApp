@@ -32,7 +32,7 @@ public class HelloControllerUnitTest {
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello Jonard!")));
+                .andExpect(content().string(equalTo("Hello Cagatay!")));
     }
 
 }
